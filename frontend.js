@@ -15,7 +15,7 @@ module.exports = {
     "plugin:import/errors",
     "plugin:import/warnings",
   ],
-  plugins: ["import"],
+  plugins: ["import", "prettier", "react", "jsx-a11y"],
   parserOptions: {
     sourceType: "module",
     ecmaFeatures: {
