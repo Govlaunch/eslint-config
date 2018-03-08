@@ -1,6 +1,6 @@
 module.exports = {
   parser: "babel-eslint",
-  plugins: ["prettier", "prettier/flowtype", "prettier/react", "react-app"],
+  plugins: ["prettier", "prettier/react", "react-app"],
   parserOptions: {
     sourceType: "module",
     ecmaFeatures: {
