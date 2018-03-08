@@ -1,32 +1,41 @@
 module.exports = {
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js"],
+        moduleDirectory: [".", "node_modules"],
+      },
+    },
+  },
   parser: "babel-eslint",
-  extends: ["prettier", "prettier/react", "react-app"],
+  extends: [
+    "react-app",
+    "prettier",
+    "prettier/react",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+  ],
+  plugins: ["import"],
   parserOptions: {
     sourceType: "module",
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   env: {
     es6: true,
-    node: true
-  },
-  rules: {
-    "prettier/prettier": "error"
-  },
-  env: {
     browser: true,
-    node: true
   },
+
   rules: {
-    "prettier/prettier": "error",
+    "no-unused-vars": ["error"],
     "object-curly-newline": [
       "error",
       {
         ObjectExpression: {
-          consistent: true
-        }
-      }
-    ]
-  }
+          consistent: true,
+        },
+      },
+    ],
+  },
 };
