@@ -9,29 +9,24 @@ module.exports = {
   },
   parser: "babel-eslint",
   extends: [
-    "react-app",
+    "airbnb-base",
     "prettier",
-    "prettier/react",
+    "prettier/flowtype",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:jsx-a11y/recommended",
   ],
-  plugins: ["import", "prettier", "react", "jsx-a11y"],
-  parserOptions: {
-    sourceType: "module",
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
+  plugins: ["import", "prettier", "flowtype"],
   env: {
+    node: true,
     es6: true,
-    browser: true,
+    mocha: true,
   },
   rules: {
     "no-unused-vars": ["error"],
     quotes: ["error", "double"],
+    "no-plusplus": 0,
     "no-shadow": 0,
-    "react/jsx-boolean-value": ["error", "always"],
+    "no-global-assign": 0,
     "object-curly-newline": [
       "error",
       {
