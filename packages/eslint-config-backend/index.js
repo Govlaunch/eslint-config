@@ -26,6 +26,15 @@ module.exports = {
     quotes: ["error", "double"],
     "no-plusplus": 0,
     "no-shadow": 0,
+    "no-param-reassign": 0,
+    "import/no-unresolved": [2, { ignore: ["^app$"] }], // flowtype stuff
+    "no-param-reassign": 0,
+    camelcase: [
+      "error",
+      {
+        properties: "never",
+      },
+    ],
     "no-global-assign": 0,
     "object-curly-newline": [
       "error",

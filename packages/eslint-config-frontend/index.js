@@ -31,6 +31,8 @@ module.exports = {
     "no-unused-vars": ["error"],
     quotes: ["error", "double"],
     "no-shadow": 0,
+    "no-underscore-dangle": 0,
+    "no-param-reassign": 0,
     "react/jsx-boolean-value": ["error", "always"],
     "object-curly-newline": [
       "error",
