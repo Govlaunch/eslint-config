@@ -2,7 +2,7 @@
 
 Reusable **eslint** settings for our projects.
 
-### Front-end
+## Front-end
 
 In order to add eslint with Govlaunch' settings, you'll need to do the following:
 
@@ -35,7 +35,24 @@ Update your **package.json** with the following:
 }
 ```
 
-### Back-end
+## Back-end
 
 The same as above, except that you'll replace `eslint-config-frontend` with `eslint-config-backend`.
 Idem for installation process.
+
+Update your **package.json** with the following:
+
+```JSON
+{
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --trailing-comma es5 --parser flow --write",
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
+```
