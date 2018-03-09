@@ -1,9 +1,9 @@
 {
   "name": "@govlaunch/eslint-config",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "license": "MIT",
   "private": false,
-  "devDependencies": {
+  "peerDependencies": {
     "babel-eslint": "^8.2.2",
     "eslint": "^4.1.0",
     "eslint-config-prettier": "^2.9.0",
