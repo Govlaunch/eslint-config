@@ -26,14 +26,21 @@ module.exports = {
     es6: true,
     browser: true,
   },
-
   rules: {
     "no-unused-vars": ["error"],
     "object-curly-newline": [
       "error",
       {
         ObjectExpression: {
-          consistent: true,
+          minProperties: 1,
+        },
+        ObjectPattern: {
+          multiline: true,
+        },
+        ImportDeclaration: "never",
+        ExportDeclaration: {
+          multiline: true,
+          minProperties: 3,
         },
       },
     ],
