@@ -14,7 +14,6 @@ module.exports = {
     "prettier/react",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:jsx-a11y/recommended",
   ],
   plugins: ["import", "prettier", "react", "jsx-a11y"],
   parserOptions: {
