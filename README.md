@@ -18,6 +18,14 @@ module.exports = {
 };
 ```
 
+And also a **.prettierrc.js**
+
+```JS
+module.exports = {
+  extends: ["@govlaunch/eslint-config-frontend/prettierrc"]
+};
+```
+
 Update your **package.json** with the following:
 
 ```JSON
