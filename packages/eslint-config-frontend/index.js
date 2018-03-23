@@ -66,5 +66,6 @@ module.exports = {
     "react/no-unescaped-entities": 0,
     "react/jsx-child-element-spacing": 0,
     "react/require-optimization": 0,
+    "react/jsx-boolean-value": "always"
   }
 };
