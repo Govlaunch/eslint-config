@@ -40,7 +40,10 @@ module.exports = {
         ObjectPattern: {
           multiline: true
         },
-        ImportDeclaration: "never",
+        ImportDeclaration: {
+          multiline: true,
+          minProperties: 3
+        },
         ExportDeclaration: {
           multiline: true,
           minProperties: 3
@@ -53,5 +56,16 @@ module.exports = {
     "react/no-set-state": 0,
     "react/forbid-prop-types": 0,
     "react/destructuring-assignment": 0,
+    "react/jsx-max-props-per-line": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/no-multi-comp": 0,
+    "react/jsx-no-literals": 0,
+    "react/jsx-max-depth": 0,
+    "react/jsx-no-bind": 0,
+    "react/jsx-handler-names": 0,
+    "react/forbid-prop-types": 0,
+    "react/sort-prop-types": 0,
+    "react/jsx-sort-default-props": 0,
+    "react/forbid-component-props": 0,
   }
 };
