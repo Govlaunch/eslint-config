@@ -3,50 +3,55 @@ module.exports = {
     "import/resolver": {
       node: {
         extensions: [".js"],
-        moduleDirectory: [".", "node_modules"],
-      },
-    },
+        moduleDirectory: [".", "node_modules"]
+      }
+    }
   },
   parser: "babel-eslint",
   extends: [
     "react-app",
     "prettier",
     "prettier/react",
+
     "plugin:import/errors",
     "plugin:import/warnings",
+    "eslint:recommended",
+    "plugin:react/all"
   ],
   plugins: ["import", "prettier", "react", "jsx-a11y"],
   parserOptions: {
     sourceType: "module",
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   env: {
     es6: true,
-    browser: true,
+    browser: true
   },
   rules: {
     "no-unused-vars": ["error"],
-    quotes: ["error", "double"],
-    "no-shadow": 0,
-    "no-underscore-dangle": 0,
-    "no-param-reassign": 0,
-    "react/jsx-boolean-value": ["error", "always"],
     "object-curly-newline": [
       "error",
       {
         ObjectExpression: {
-          minProperties: 1,
+          minProperties: 1
         },
         ObjectPattern: {
-          multiline: true,
+          multiline: true
         },
+        ImportDeclaration: "never",
         ExportDeclaration: {
           multiline: true,
-          minProperties: 3,
-        },
-      },
+          minProperties: 3
+        }
+      }
     ],
-  },
+    "react/jsx-indent": [2, 2],
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-filename-extension": 0,
+    "react/no-set-state": 0,
+    "react/forbid-prop-types": 0,
+    "react/destructuring-assignment": 0,
+  }
 };
