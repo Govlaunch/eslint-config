@@ -64,6 +64,7 @@ module.exports = {
     "react/jsx-sort-default-props": 0,
     "react/forbid-component-props": 0,
     "react/no-unescaped-entities": 0,
-    "react/jsx-child-element-spacing": 0
+    "react/jsx-child-element-spacing": 0,
+    "react/require-optimization": 0,
   }
 };
