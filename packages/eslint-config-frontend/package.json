@@ -3,6 +3,9 @@
   "version": "1.0.6",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "publish-push": "yarn publish --access=public --tag=latest && git pu"
+  },
   "dependencies": {
     "babel-eslint": "^7.2.0",
     "eslint": "^4.1.0",
