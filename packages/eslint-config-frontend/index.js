@@ -63,5 +63,6 @@ module.exports = {
     "react/sort-prop-types": 0,
     "react/jsx-sort-default-props": 0,
     "react/forbid-component-props": 0,
+    "react/no-unescaped-entities": 0
   }
 };
