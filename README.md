@@ -21,9 +21,7 @@ module.exports = {
 And also a **.prettierrc.js**
 
 ```JS
-module.exports = {
-  extends: ["@govlaunch/eslint-config-frontend/prettierrc"]
-};
+module.exports = require("@govlaunch/eslint-config-frontend/prettierrc");
 ```
 
 Update your **package.json** with the following:
@@ -35,7 +33,7 @@ Update your **package.json** with the following:
   },
   "lint-staged": {
     "*.js": [
-      "prettier --trailing-comma all --write",
+      "prettier --write",
       "eslint --fix",
       "git add"
     ]
