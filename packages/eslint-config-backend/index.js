@@ -52,7 +52,6 @@ module.exports = {
       },
     ],
     "import/no-dynamic-require": 0,
-    "global-require": 0,
-    "arrow-body-style": 0
+    "global-require": 0
   },
 };
