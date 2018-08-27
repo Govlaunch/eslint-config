@@ -1,10 +1,10 @@
 {
   "name": "@govlaunch/eslint-config-backend",
-  "version": "1.2.2",
+  "version": "1.4.0",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "publish-push": "yarn publish --access=public --tag=latest && git pu"
+    "publish-push": "yarn publish --access=public --no-git-tag-version --tag=latest && git pu"
   },
   "dependencies": {
     "babel-eslint": "^8.1.0",
