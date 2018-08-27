@@ -3,5 +3,5 @@ module.exports = {
   tabWidth: 2,
   trailingComma: "es5",
   singleQuote: false,
-  parser: "flow"
+  printWidth: 100
 };
