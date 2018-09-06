@@ -5,6 +5,9 @@ module.exports = {
         extensions: [".js"],
         moduleDirectory: [".", "node_modules"]
       }
+    },
+    react: {
+      version: "15.3"
     }
   },
   parser: "babel-eslint",
@@ -30,7 +33,12 @@ module.exports = {
     browser: true
   },
   rules: {
-    "no-unused-vars": ["error"],
+    "no-unused-vars": [
+      "error",
+      {
+        ignoreRestSiblings: false
+      }
+    ],
     "object-curly-newline": [
       "error",
       {
@@ -46,6 +54,7 @@ module.exports = {
         }
       }
     ],
+    "react/no-did-mount-set-state": 0,
     "react/jsx-indent": [2, 2],
     "react/jsx-indent-props": [2, 2],
     "react/jsx-filename-extension": 0,
@@ -59,7 +68,6 @@ module.exports = {
     "react/jsx-max-depth": 0,
     "react/jsx-no-bind": 0,
     "react/jsx-handler-names": 0,
-    "react/forbid-prop-types": 0,
     "react/sort-prop-types": 0,
     "react/jsx-sort-default-props": 0,
     "react/forbid-component-props": 0,
