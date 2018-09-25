@@ -7,15 +7,13 @@ module.exports = {
       }
     },
     react: {
-      version: "15.3"
+      version: "16.4.1"
     }
   },
   parser: "babel-eslint",
   extends: [
-    "react-app",
     "prettier",
     "prettier/react",
-
     "plugin:import/errors",
     "plugin:import/warnings",
     "eslint:recommended",
