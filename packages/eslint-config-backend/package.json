@@ -7,12 +7,12 @@
     "publish-push": "yarn publish --access=public --no-git-tag-version --tag=latest && git pu"
   },
   "dependencies": {
-    "babel-eslint": "^8.1.0",
-    "eslint": "^4.1.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.9.0",
-    "prettier": "^1.12.1",
-    "prettier-eslint": "^8.8.1"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "prettier": "^1.14.3",
+    "prettier-eslint": "^8.8.2"
   }
 }
