@@ -1,6 +1,6 @@
 {
   "name": "@govlaunch/eslint-config-backend",
-  "version": "1.5.2",
+  "version": "1.6.0",
   "license": "MIT",
   "private": false,
   "scripts": {
